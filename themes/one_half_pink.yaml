@@ -1,0 +1,85 @@
+# =====================================================================
+#  One Half Pink - Home Assistant theme
+#  https://github.com/daneabernathy/ha-one-half-pink-theme
+#
+#  Neutral dark greys with hot pink (#F92672) for the primary colour,
+#  accents and active states. Started from the "One Half Dark" colour
+#  scheme, then made darker and less blue.
+#
+#  Surfaces: #1E1E20 page   #18181A sidebar and header   #272729 card
+#            #343437 border and edit header
+#  Text:     #E2E2E5 main   #A0A3A8 secondary   #606268 disabled
+#  States:   #E06C75 red   #98C379 green   #E5C07B yellow
+#            #61AFEF blue  #C678DD purple
+# =====================================================================
+
+One Half Pink:
+  # ---- Brand colours -------------------------------------------------
+  primary-color: "#F92672"
+  accent-color: "#F92672"
+  light-primary-color: "#F92672"
+  dark-primary-color: "#C4155A"
+  text-light-primary-color: "#FFFFFF"
+
+  # ---- Surfaces ------------------------------------------------------
+  primary-background-color: "#1E1E20"
+  secondary-background-color: "#18181A"
+  card-background-color: "#272729"
+  ha-card-background: "#272729"
+  ha-card-border-color: "#343437"
+  ha-card-border-radius: "12px"
+  divider-color: "rgba(226, 226, 229, 0.12)"
+
+  # ---- Text ----------------------------------------------------------
+  primary-text-color: "#E2E2E5"
+  secondary-text-color: "#A0A3A8"
+  disabled-text-color: "#606268"
+  text-primary-color: "#FFFFFF"
+
+  # ---- Header and sidebar --------------------------------------------
+  app-header-background-color: "#18181A"
+  app-header-text-color: "#E2E2E5"
+  app-header-edit-background-color: "#343437"
+  app-header-edit-text-color: "#E2E2E5"
+  sidebar-background-color: "#18181A"
+  sidebar-text-color: "#E2E2E5"
+  sidebar-icon-color: "#A0A3A8"
+  sidebar-selected-text-color: "#F92672"
+  sidebar-selected-icon-color: "#F92672"
+
+  # ---- Status colours ------------------------------------------------
+  error-color: "#E06C75"
+  warning-color: "#E5C07B"
+  success-color: "#98C379"
+  info-color: "#61AFEF"
+
+  # ---- Entity state colours (icons, tiles and their sliders) ---------
+  state-active-color: "#F92672"
+  state-inactive-color: "#606268"
+  state-light-active-color: "#F92672"
+  state-switch-active-color: "#F92672"
+  state-media_player-active-color: "#C678DD"
+  state-climate-heat-color: "#E06C75"
+  state-climate-cool-color: "#61AFEF"
+  state-binary_sensor-problem-on-color: "#E06C75"
+  state-binary_sensor-moisture-on-color: "#61AFEF"
+
+  # ---- Form fields (dropdowns, text boxes) ---------------------------
+  input-fill-color: "rgba(226, 226, 229, 0.06)"
+  input-ink-color: "#E2E2E5"
+  input-label-ink-color: "#A0A3A8"
+  input-idle-line-color: "#606268"
+  input-hover-line-color: "#A0A3A8"
+  input-dropdown-icon-color: "#A0A3A8"
+  input-disabled-fill-color: "rgba(226, 226, 229, 0.03)"
+  input-disabled-ink-color: "#606268"
+
+  # ---- Tell Home Assistant this is a dark theme ----------------------
+  # Without a "dark" mode, Home Assistant builds the theme on top of its
+  # LIGHT defaults, so anything not set above (dialogs, buttons, some
+  # form fields) comes out light.
+  modes:
+    dark:
+      primary-background-color: "#1E1E20"
+      card-background-color: "#272729"
+      primary-text-color: "#E2E2E5"
