@@ -7,6 +7,19 @@ darker and less blue.
 
 <!-- Screenshot: add images/screenshot.png and link it here -->
 
+## Status
+
+| Check | Result |
+| --- | --- |
+| Theme file parses as YAML | ✅ |
+| HACS validation (GitHub Actions) | ❌ Not run yet |
+| Installed and checked in Home Assistant | ❌ Not tested in this version |
+
+`primary-color`, `accent-color` and the `state-*` variable pattern are
+checked against the Home Assistant documentation; the other variable
+names come from common theme practice and haven't been individually
+confirmed.
+
 ## Install with HACS
 
 1. In Home Assistant, open **HACS**, then the three-dot menu, then
@@ -45,6 +58,14 @@ dialogs and some controls come out light.
 
 Issues and pull requests are welcome. The GitHub Actions workflow runs
 the HACS validation on every change.
+
+## Acknowledgements
+
+Designed by Dane Abernathy with help from
+[Claude](https://www.anthropic.com/claude) (Anthropic), used through
+Claude Code to draft the theme file and documentation. Commits Claude
+helped write carry a `Co-Authored-By: Claude` trailer. Every change is
+reviewed by the maintainer.
 
 ## License
 
